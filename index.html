@@ -109,13 +109,19 @@
         <input type="tel">
         
         <fieldset>
-           <label for="membership-type">Membership Type</label>
-           <select id="membership-type" required></select>
-      <option value="">Select a Membership Option</option>
-      <option value="">Monthly Membership</option>
-      <option value="">Annual Memberhsip</option>
-      <option value="">Family & Group Plans</option>
-           </select>
+           <legend>Membership Type<span class="required">*</span></legend>
+           <p>Select a Membership Option</p>
+    <input type="radio">
+    <label for="monthly-membership">Monthly Membership</label>
+
+    <input type="radio">
+    <label for="annual-membership">Annual Membership</label>
+
+    <input type="radio">
+    <label for="family-group-plans">Family & Group Plans</label>
+  </fieldset>
+   
+    
           
        <label for="tell-us-about-your-fitness-goals">Tell us about your fitness goals</label>
         <textarea id="tell-us-about-your-fitness-goals"></textarea>
