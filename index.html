@@ -27,7 +27,7 @@
     </svg> 
     <h1>Transform Your Life at Limitless Fitness</h1>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
-    <a href="#">Join Now</a>
+    <a href="membership-form">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
     
@@ -98,16 +98,29 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+      <form>
+        <label for="full-name">Full Name<span class="required">*</span></label>
+        <input type="text">
+
+        <label for="email">Email Address<span class="required">*</span></label>
+        <input type="email">
+        
+        <label for="phone">Phone Number<span class="required">*</span></label>
+        <input type="tel">
+        
+        <fieldset>
+           <label for="membership-type">Membership Type</label>
+           <select id="membership-type" required></select>
+      <option value="">Select a Membership Option</option>
+      <option value="">Monthly Membership</option>
+      <option value="">Annual Memberhsip</option>
+      <option value="">Family & Group Plans</option>
+           </select>
+          
+       <label for="tell-us-about-your-fitness-goals">Tell us about your fitness goals</label>
+        <textarea id="tell-us-about-your-fitness-goals"></textarea>
+
+       <input type="Submit" value="Submit">
       </section>
     </section>
   </main>
@@ -122,7 +135,7 @@
   </aside>
   <footer>
     <section>
-      <h2>>Stay connected</h2>
+      <h2>Stay connected</h2>
       <ul>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
