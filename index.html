@@ -71,7 +71,17 @@
       </ul>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
+          <img src="images/classes.jpg"
+    srcset="
+        images/classes-small.jpg 400w,
+        images/classes-medium.jpg 800w,
+        images/classes-large.jpg 1200w"
+
+    sizes="
+        (max-width: 600px) 100vw,
+        (max-width: 1000px) 75vw, 1200px" >
+              
+      src="images/classes.jpg
 
     </section>
     <section id="personaltraining">
@@ -99,31 +109,31 @@
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
       <form>
-        <label for="full-name">Full Name<span class="required">*</span></label>
+        <label for="full-name">Full Name<span class="required">*</span></label><br>
         <input type="text">
 
-        <label for="email">Email Address<span class="required">*</span></label>
+        <label for="email">Email Address<span class="required">*</span></label><br>
         <input type="email">
         
-        <label for="phone">Phone Number<span class="required">*</span></label>
+        <label for="phone">Phone Number<span class="required">*</span></label><br>
         <input type="tel">
         
         <fieldset>
            <legend>Membership Type<span class="required">*</span></legend>
            <p>Select a Membership Option</p>
     <input type="radio">
-    <label for="monthly-membership">Monthly Membership</label>
+    <label for="monthly-membership">Monthly Membership</label><br>
 
     <input type="radio">
-    <label for="annual-membership">Annual Membership</label>
+    <label for="annual-membership">Annual Membership</label><br>
 
     <input type="radio">
-    <label for="family-group-plans">Family & Group Plans</label>
+    <label for="family-group-plans">Family & Group Plans</label><br>
   </fieldset>
    
     
           
-       <label for="tell-us-about-your-fitness-goals">Tell us about your fitness goals</label>
+       <label for="tell-us-about-your-fitness-goals">Tell us About Your Fitness Goals</label>
         <textarea id="tell-us-about-your-fitness-goals"></textarea>
 
        <input type="Submit" value="Submit">
