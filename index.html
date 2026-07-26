@@ -7,6 +7,21 @@
 <meta name="author" content="Professor Carrasquilla">
 <meta name="description" content="Learn about Limitless Gym and all the facility offers">
 <meta name="robots" content="index, follow">
+<title>Limitless Fitness Gym</title>
+
+ <meta property="og:title" content="Limitless Fitness Gym">
+ <meta property="og:type"  content="article">
+ <meta property="og:image"  content="images/facility.jpg">
+ <meta property="og:url" content="https://www.LimitlessGym.com/~Professor Carrasquilla/classes/ourclasses/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="https://LimitlessGym.com/LimitlessGym">
+  <meta name="twitter:creator" content="Professor Carrasquilla">
+  <meta name="twitter:title" content="Limitless Gym">
+  <meta name="twitter:description" content="Testimonials from our members">
+  <meta name="twitter:image" content="https://images-dumbells.jpg">
+
+
 
 </head>
 
@@ -33,7 +48,9 @@
      <img src="images/facility.jpg"
     srcset="
         images/facility-small.jpg 320w,
-        images/facility-medium.jpg 768w," >
+        images/facility-medium.jpg 768w" 
+        
+        alt="Black and white exterior of Limitless Fitness Gym">
     
       src="images/facility.jpg"
 
@@ -78,7 +95,9 @@
           <img src="images/classes.jpg"
     srcset="
         images/classes-small.jpg 320w,
-        images/classes-medium.jpg 768w,">
+        images/classes-medium.jpg 768w"
+        
+        alt="People participating in a fitness class">
               
       src="images/classes.jpg
 
@@ -95,7 +114,9 @@
  <img src="images/dumbells.jpg"
     srcset="
         images/dumbells-small.jpg 320w,
-        images/dumbells-medium.jpg 768w," >
+        images/dumbells-medium.jpg 768w"
+        
+         alt="Dumbbells arranged in the gym">
 
         src="images/dumbells.jpg"
 
@@ -112,26 +133,27 @@
         <h3>Join Limitless Fitness Today!</h3>
         <p>Fill out the form below to kickstart your fitness journey:</p>
 <!--add accessibility to the form-->
-      <form>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+
         <label for="full-name">Full Name<span class="required">*</span></label><br>
-        <input type="text"><br>
+        <input type="text" id="full-name" name="full-name"><br>
 
         <label for="email">Email Address<span class="required">*</span></label><br>
-        <input type="email"><br>
+        <input type="email" id="email" name="email"><br>
         
         <label for="phone">Phone Number<span class="required">*</span></label><br>
-        <input type="tel"><br>
+        <input type="tel" id="phone" name="phone"><br>
         
         <fieldset>
            <legend>Membership Type<span class="required">*</span></legend>
            <p>Select a Membership Option</p>
-    <input type="radio">
+    <input type="radio" id="monthly-membership" name="membership">
     <label for="monthly-membership">Monthly Membership</label><br>
 
-    <input type="radio">
+    <input type="radio" id="annual-membership" name="membership">
     <label for="annual-membership">Annual Membership</label><br>
 
-    <input type="radio">
+    <input type="radio" id="family-group-plans" name="membership">
     <label for="family-group-plans">Family & Group Plans</label><br>
   </fieldset>
    
@@ -141,7 +163,8 @@
         <textarea id="tell-us-about-your-fitness-goals"></textarea><br>
 
        <input type="Submit" value="Submit">
-       </fieldset>
+      </form>
+      
       </section>
     </section>
   </main>
@@ -149,7 +172,7 @@
     <h2>Testimonials</h2>
     <q>
       Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference! - Alex R.
-    </q>
+    </q><br>
     <q>
       The variety of classes and top-notch equipment keeps me motivated every single day.- Jamie L.
     </q>
